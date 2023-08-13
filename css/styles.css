@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+
+:root {
+    --primary-colour: rgb(40, 20, 74);
+    --tank-colour: rgb(230, 10, 255);
+    --damage-colour: rgb(255, 10, 10);
+    --support-colour: rgb(255, 255, 10);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, a {
+    scroll-behavior: smooth;
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    background-color: var(--primary-colour);
+}
+
+section {
+    padding: 2em 0;
+    min-height: 100vh;
+    background-color: var(--primary-colour);
+    margin: 0 0 2em 0;
+}
+
+h1, h2 {
+    position: relative;
+    top: 3.75rem;
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+h3 {
+    position: relative;
+    top: 1.25rem;
+    font-weight: lighter;
+    font-size: 25px;
+    letter-spacing: 0.04rem;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+img {
+    width: 100%;
+}
+
+li {
+    text-align: left;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: var(--primary-colour);
+    font-size: 18px;
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    z-index: 998;
+}
+
+#navbar-logo {
+    top: 0px;
+    margin: 0px;
+    width: 3em;
+    border-radius: 1.5em;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar a {
+    padding: 22px;
+} .navbar a:hover {
+    background-color: rgb(71, 36, 131);
+} #homebtn:hover {
+    border-bottom: 3px solid rgb(10, 255, 80);
+} #tanksbtn:hover {
+    border-bottom: 3px solid var(--tank-colour);
+} #damagebtn:hover {
+    border-bottom: 3px solid var(--damage-colour);
+} #supportsbtn:hover {
+    border-bottom: 3px solid var(--support-colour);
+}
+
+#title {
+    position: relative;
+    top: 3.25rem;
+    font-family: 'Belanosima', sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    padding: 0 4rem;
+}
+
+.tank-info, .damage-info, .support-info {
+    padding: 1em 1.5em;;
+    border-bottom-left-radius: 1.7rem;
+    border-bottom-right-radius: 1.7rem;
+}
+
+.tank-info {
+    border-top: 2px solid rgb(230, 10, 255);
+}
+.damage-info {
+    border-top: 2px solid rgb(255, 10, 10);
+}
+.support-info {
+    border-top: 2px solid rgb(255, 255, 10);
+}
+
+#tanks {
+    position: relative;
+    top: 2rem;
+}
+
+#reinhardt {
+    max-width: 309px;
+}
+
+#dva {
+    max-width: 183.5px;
+}
+
+#ramattra {
+    max-width: 340px;
+}
+
+#doomfist {
+    max-width: 113px;
+}
+
+#genji {
+    max-width: 175.5px;
+}
+
+#hanzo {
+    max-width: 194px;
+}
+
+#tracer {
+    max-width: 246px;
+}
+
+#ashe {
+    max-width: 204px;
+}
+
+#reaper {
+    max-width: 206.8px;
+}
+
+#moira {
+    max-width: 107.5px;
+}
+
+#kiriko {
+    max-width: 159.5px;;
+}
+
+#ana {
+    max-width: 324px;
+}
+
+@media screen and (max-width: 580px) {
+    #title {
+        padding: 0;
+    }
+    #navbar-logo {
+        width: 2.5em;
+    }
+    .navbar li {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .navbar a {
+        padding: 20px 18px;
+    }
+}
+
+@media screen and (max-width: 386px) {
+    .navbar a {
+        padding: 20px 12px;
+    }
+    #title {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 333px) {
+    #navbar-logo {
+        display: none;
+    }
+    .navbar a {
+        padding: 20px 14px;
+    }
+}

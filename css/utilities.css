@@ -1,0 +1,104 @@
+.container {
+    max-width: 85%;
+    margin: 0 auto;
+    overflow: auto;
+    overflow-x: hidden;
+    padding: 0 28px;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.parallax-container {
+    position: relative;
+    top: 75px;
+    overflow-y: hidden;
+}
+
+.parallax-image {
+    background-image: url(../images/genjiheroimg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.role-info {
+    margin: 4.5rem 0 0 0;
+    font-size: 18px;
+}
+
+.hero-cards-container {
+    margin: 2.5rem 0 0 0;
+    --w: 350px;
+    --n: 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(max(var(--w), 100% / (var(--n) + 1) + 0.1%), 1fr));
+    gap: 2rem;
+}
+
+.hero-card {
+    min-width: 250px;
+    background-color: rgb(40, 40, 40);
+    border: 4px solid rgb(120, 120, 120);
+    border-radius: 2rem;
+}
+
+.img-container {
+    padding: 0.5em 1em;
+    background-color: rgba(60, 60, 60);
+    border-top-left-radius: 1.7rem;
+    border-top-right-radius: 1.7rem;
+} .img-container img {
+    display: block;
+    margin: 0 auto;
+}
+
+.tank-info small, .damage-info small, .support-info small {
+    margin: 0.5rem 0 0 0;
+}
+
+@media screen and (max-width: 580px) {
+    .container {
+        max-width: 92%;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .container {
+        max-width: 98%;
+        padding: 0 14px;
+    }
+    .navbar li {
+        font-size: 0.8rem; 
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        padding: 0 12px;
+    }
+    .hero-cards-container {
+        --w: 225px;
+        grid-template-columns: repeat(auto-fit, minmax(max(var(--w), 100% / (var(--n) + 1) + 0.1%), 1fr));
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 333px) {
+    .navbar .flex {
+        justify-content: center;
+    }   
+}
